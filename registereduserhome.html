@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Homepage</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="viewstyle">
+  <link rel="stylesheet" href="viewstyle.css">
+  <link rel="stylesheet" href="header-search.css">
+  <link rel="stylesheet" href="button.css">
+  
+  <!-- For jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Charity App - Username</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About My Profile</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#create">Create Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="viewall.html">View Posts</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Welcome</h1>
+        <a href="#projects" class="btn btn-primary js-scroll-trigger">View Your Posts</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row">
+          <div id="profpic">
+				<input type="image" name="file" id="fileImage">
+				<input type="button" name="submit" id="submitImage" value="Upload">
+          </div>
+        <div class="col-lg-8 mx-3">
+			<script type="text/javascript">
+			$(document).ready(function(){
+				$(document).on("click", "#edit", function(){
+					var newBio = prompt("Enter new bio:", $(this).siblings(".text").text());
+					$(this).siblings(".text").text(newBio);
+				});
+			});
+			</script>
+			  <h2 class="text-white mb-4">Hello user!</h2>
+			  <p class="text-white-50">This is your bio, you can edit it by clicking the "edit" button.</p>
+			  <button id="edit">Edit</button>
+        </div>
+      </div>
+      <img src="img/ipad.png" class="img-fluid" alt="">  
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-black mb-4">My Projects</h2>
+          <p class="text-black-50">Here is the list of projects that you posted.</p>
+        </div>
+      </div>
+
+      
+      <div id="columns">
+        <figure class = "item1">
+          <img src="pics/taal_volcano.jpg">
+            <h2>Eruption of Taal Volcano 2020</h2>
+            <figcaption class="caption">OOn 12th of January 2020 (Sunday), the taal volcano started spewing ash. The Philippine Institute of Volcanology 
+			and Seismology (Phivolcs) raised the alert status to level 2. That same day, the alert level was raised to level 4, 
+			where there was frequent volcanic lightning activity. By nightfall, the ashfall already reached certain areas such 
+			as Calabarzon and Metro Manila. We are in need of donations for those who are affected, no matter how small, will be deeply appreciated.</figcaption><br>
+            <p> #taaleruption #taalvolcano #naturalcalamity #volcano #philippines </p>
+			<div id="container">
+              <div class="button" id="button-2">
+                <div id="slide"></div>
+              </div>
+            </div>    
+        </figure>
+    
+          
+          <figure class = "item2">
+          <img src="pics/panda.jpg">
+          <h2> Save Pandas </h2>
+          <figcaption>Pandas are bear-like creatures, distinguishable by their black and white color pattern. In 2016, the International Union for 
+		  Conservation of Nature declassified pandas from “endangered” to “vulnerable”. There are about 1,864 pandas living in the wild, but still 
+		  at risk because of habitat loss. A large proportion of the panda's habitat has already been lost  to meet the needs of the area's booming 
+		  population. Donate now to help conserve pandas and their habitat.</figcaption><br>
+		  <p> #panda #SavePandas #SaveAnimals </p>
+          <div id="container">
+            <div class="button" id="button-2">
+              <div id="slide"></div>
+            </div>
+          </div>  
+            
+        </figure>
+          
+        <figure class = "item3">
+          <img src="pics/forest_fire_benguet.jpg">
+          <h2> Benguet Forest Fire 2020</h2>
+          <figcaption>The fire started February 11 in Barangay Adaoa and was controlled on February 15. Another forest fire blazed on February 19, in 
+		Sitio Nalseb, Barangay Ambassador, in Tublay, Benguet. A total of 165,620 trees and seedlings were damaged by the fire and left millions in 
+		damage. We are in need of donations for the affected families.</figcaption><br>
+		<p>  #BenguetForestFire #ForestFire #fire #NaturalCalamity </p>
+          <div id="container">
+            <div class="button" id="button-2">
+              <div id="slide"></div>
+            </div>
+          </div>    
+        </figure>
+    </div>
+
+    <div>
+      <input type="button" class="btn btn-primary btn-space mx-auto" onclick="parent.location='viewall.html'" value="VIEW ALL POSTS>">
+    </div>
+  </section>
+
+    <!-- Signup Section -->
+
+  <section id="create" class="login-section">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+          <img src = "pics/post.png" style="width:50px;height:50px;"></img>
+          <h2 class="text-white mb-5">Create A Post</h2>
+
+         
+			<form class="form-inline d-flex">
+				<p><input type="file"  accept="image/*" name="image" id="file"  onchange="upload(this);" style="display: none;"></p>
+				<p><label type="button" class ="btn btn-primary btn-space mx-2" for="file" style="cursor: pointer; width: 715px;">Upload Image</label></p>
+				<div id="container">
+				</div>
+				<input type="text" class="form-control flex-fill mr-auto mr-sm-2 mb-3 mb-sm-0" id="title" placeholder="Title" >
+				<textarea name="description" id="desc" cols="30" rows="10" class="form-control flex-fill mr-auto mr-sm-2 mb-3 mb-sm-0" placeholder="Description" style="width:800px"></textarea>
+				<input type="number" class="form-control flex-fill mr-auto mr-sm-2 mb-3 mb-sm-0" id="goal" placeholder="Target Funds (Optional)" style="width: 800px;">
+				<input type="text" class="form-control flex-fill mr-auto mr-sm-2 mb-3 mb-sm-0" id="tags" placeholder="#Tags" style="width: 800px;">
+				<button type="submit" class ="btn btn-primary btn-space mx-auto">Post</button>
+			</form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div style="margin-bottom: 10rem;">
+
+  </div>
+  
+
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black" id="contact">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">hello@yourdomain.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+1 (555) 902-8832</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Your Website 2019
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+<script>
+  
+function upload(myFile)
+{
+
+	var image = document.createElement("img");
+	var source = document.createAttribute("src");
+	var file = myFile.files[0];  
+
+   	var filename = file.name;
+	source.value = filename;
+	image.setAttributeNode(source);
+
+
+	$("#cont").append(image)
+	
+}
+</script>
+
+</html>

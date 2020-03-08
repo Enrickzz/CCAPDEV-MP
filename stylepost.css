@@ -1,0 +1,16 @@
+body {
+    background: url(//subtlepatterns.com/patterns/scribble_light.png);
+    font-size: 15px;
+    min-height: 1000px;
+  }
+
+  #contain {
+   /* column-width: 320px;
+    column-gap: 15px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;*/
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+    
+  }
